@@ -19,6 +19,7 @@
     img {
         border: 0;
     }
+    
     .wrapper {
         width:100%;
         table-layout: fixed;
@@ -28,14 +29,37 @@
     .main {
         background-color: #ffffff;
         margin: 0 auto;
-        width: 100;
+        width: 100%;
         max-width: 600px;
         border-spacing: 0;
-        font-family: sans-serif;
+        font-family: verdana;
         color: #171a1b;
     }
-    .column {
-        
+    .image-listing {
+        padding-bottom: 0;
+    }
+    .info-panels {
+        text-align: center;
+        font-size: 0;
+    }
+    .info-panels .panel {
+        width: 100%;
+        border: none;
+        max-width: 300px;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        padding: 15px 10px 25px;
+    }
+
+    #more-info-button{
+        background-color: #171a1b;
+        border: none;
+        color: #ffffff;
+        height:30px;
+        width: 60%;
+        border-radius: 15px
     }
 
 </style>
@@ -46,39 +70,70 @@
         <table class="main" width="100%">
             <!-- Top Border -->
            <tr>
-               <td height="12" style="background-color: #171a1b;"></td>
+               <td height="4" style="background-color: #171a1b;"></td>
            </tr>
            <!-- Logo Header -->
            <tr>
-               <td class="two columns">
-                   <table class="column">
+               <td class="logo-header">
+                   <table width="100%" style="text-align: center; padding:8px 0 5px">
                        <tr>
                            <td>
                                <img src="img/29degrees fulll logo.png" alt="29 Degrees Logo" width="180" title="29 Degrees Logo">
                             </td>
                        </tr>
-
-                    </table>
-                    <table class="column">
-                        <tr>
-                            <td>
-
-                            </td>
-                        </tr>
                     </table>
                 </td>
             </tr>
             <!-- Listing Image -->
             <tr>
                 <td>
-                    <table class="imagelisting">
-                        <td>
-                            <tr><img src="" alt=""></tr>
-                        </td>
+                    <table class="image-listing">
+                        <tr>
+                            <td><img src="img/California-Modern-Home-In-Texas-Coats-Homes-01-1-Kindesign-1024x819.jpeg" alt="Rubell House Picture" width="100%" max-width="600px" title="rubell"></td>
+                        </tr>
                     </table>
                 </td>
             </tr>
             <!-- Listing Info -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="info-panels">
+                                <table class="panel" style="background-color: #02383C; color:#ffffff">
+                                    <tr>
+                                        <td>
+                                            <p style="font-size:large; font-weight:5; ">RUBELL HOUSE.</p>
+                                            <p>Boutique Townhouse Offices</p>
+                                            
+                                            <p><small>1660 Sq ft. Full Floors</small></p>
+                        
+                                            <p><small>Elevator townhouse housing full-floor office environments. Offering reception, 2 natural offices, conference room, large open pit, wet kitchen and private washroom.</small></p>
+                                            
+                                            <p><small>Central HVAC, plus split unit in each room.</small></p>
+                                        </td>
+                                    </tr>    
+                                </table>
+                                <table class="panel">
+                                    <tr>
+                                        <td>
+                                            <p style="font-size: larger; font-weight: 800;">29 Degrees</p>
+                                            <p style="font-size: smaller; font-weight: 600;">Rubell House.</p>
+                                            <br>
+                                            <ul style="list-style-type: none; font-size: smaller; padding:0;">
+                                                <li>5th Floor 5000 | month</li>
+                                                <li>3rd Floor 5000 | month</li>
+                                            </ul>
+                                            <p style="font-size:smaller; font-weight: 500;">.Midtown New York</p>
+                                            <button type="button" id="more-info-button"><a href="mailto:jean@29degrees.com" style="color: #ffffff; text-decoration: none; font-size: medium; font-weight: 600;">More Info</a></button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
             
         </table>
         
